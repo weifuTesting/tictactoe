@@ -42,12 +42,28 @@ public class GameLogic {           //2d array for the board
 				computerWin = true;								
 		}
 		
+		//diagonal left
+		if ((board[0][0] == 1) && (board[1][1] == 1) && (board[2][2] == 1)) 
+			playerWin = true;
+		
+		if ((board[0][0] == 2) && (board[1][1] == 2) && (board[2][2] == 2)) 
+			computerWin = true;			
+		
+		//diagonal right
+		if ((board[0][2] == 1) && (board[1][1] == 1) && (board[2][0] == 1)) 
+			playerWin = true;
+		
+		if ((board[0][2] == 2) && (board[1][1] == 2) && (board[2][0] == 2)) 
+			computerWin = true;	
+		
 		if (playerWin == true)
 			return 1;
 		else if(computerWin == true)
 			return 2;
 		else 
 			return 0;
+		
+		
 		
 		
 	}

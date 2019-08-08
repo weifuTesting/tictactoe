@@ -26,6 +26,8 @@ public class GameServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+		String coordinate = request.getParameter("coordinate");
+		System.out.println(coordinate);
 	}
 
 	/**
