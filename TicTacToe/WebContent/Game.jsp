@@ -19,52 +19,61 @@ table,tr,td {
 <table>
   <tr>
     <td>
-    <form method="post" action="Gamelogic"> 
+    <form method="GET" action="GameServlet"> 
+    	<input type="hidden" name="coordinate" id="00" value="00" />  <!-- 00 refers to position0,0 -->
     	<input type="submit" value="Select">
     	</form>
     </td>
     <td>
-    	<form method="post" action="Gamelogic"> 
+    	<form method="GET" action="GameServlet"> 
+    	 <input type="hidden" name="coordinate" id="01" value="01" /> 
     	<input type="submit" value="Select">
     	</form>
     </td>
     <td>
-        <form method="post" action="Gamelogic"> 
+        <form method="GET" action="GameServlet"> 
+         <input type="hidden" name="coordinate" id="02" value="02" /> 
     	<input type="submit" value="Select">
     	</form>
 	</td>
   </tr>
   <tr>
     <td>
-    	<form method="post" action="Gamelogic"> 
+    	<form method="GET" action="GameServlet"> 
+    	 <input type="hidden" name="coordinate" id="10" value="10" /> 
     	<input type="submit" value="Select">
     </form>
     </td>
     <td>
-        <form method="post" action="Gamelogic"> 
+        <form method="GET" action="GameServlet"> 
+         <input type="hidden" name="coordinate" id="11" value="11" /> 
     	<input type="submit" value="Select">
     	</form>
     </td>
     <td>
-        <form method="post" action="Gamelogic"> 
+        <form method="GET" action="GameServlet"> 
+         <input type="hidden" name="coordinate" id="12" value="12" /> 
     	<input type="submit" value="Select">
     	</form>
     </td>
   </tr>
   <tr>
     <td>
-    	<form method="post" action="Gamelogic"> 
+    	<form method="GET" action="GameServlet"> 
+    	 <input type="hidden" name="coordinate" id="20" value="20" /> 
     	<input type="submit" value="Select">
     	</form>
     </td>
     <td>
-    	<form method="post" action="Gamelogic"> 
+    	<form method="GET" action="GameServlet"> 
+    	 <input type="hidden" name="coordinate" id="21" value="21" /> 
     	<input type="submit" value="Select">
     </form>
     
     </td>
     <td>    
-    	<form method="post" action="Gamelogic"> 
+    	<form method="GET" action="GameServlet"> 
+    	 <input type="hidden" name="coordinate" id="22" value="22" /> 
     	<input type="submit" value="Select">
     </form>
     </td>
