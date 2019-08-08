@@ -25,20 +25,27 @@ public class GameServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
 		String coordinate = request.getParameter("coordinate");
 		System.out.println(coordinate);
+		
+		//"Main method"
+		//get input from jsp corrosponding to button pressed
+		//rune logic on board
+		//returns output
+		
+		//request.setAttribute("username", "Smith");
+		//RequestDispatcher rd = sc.getRequestDispatcher("/jsp/mypage.jsp");
+		//https://docs.oracle.com/cd/A97329_03/web.902/a95882/basics.htm#1014110
+		//page search: Passing Data Between a JSP Page and a Servlet
+		//
+		
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//"Main method"
-		//get input from jsp corrosponding to button pressed
-		//rune logic on board
-		//returns output
-		doGet(request, response);
+		//doGet(request, response);
 	}
 
 }
