@@ -4,11 +4,73 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Tic tac toe / Naughts and Crosses</title>
 </head>
+<style>
+table,tr,td {
+	border: 1px solid black;
+	padding: 15px;
+}
+</style>
 <body>
 <!-- insert grid with buttons -->
 <!-- insert post methods leading to sending button/coordinate pressed to game logic -->
+<h1>Welcome to classic game of naughts and crosses</h1>
+<table>
+  <tr>
+    <td>
+    <form method="post" action="Gamelogic"> 
+    	<input type="submit" value="Select">
+    	</form>
+    </td>
+    <td>
+    	<form method="post" action="Gamelogic"> 
+    	<input type="submit" value="Select">
+    	</form>
+    </td>
+    <td>
+        <form method="post" action="Gamelogic"> 
+    	<input type="submit" value="Select">
+    	</form>
+	</td>
+  </tr>
+  <tr>
+    <td>
+    	<form method="post" action="Gamelogic"> 
+    	<input type="submit" value="Select">
+    </form>
+    </td>
+    <td>
+        <form method="post" action="Gamelogic"> 
+    	<input type="submit" value="Select">
+    	</form>
+    </td>
+    <td>
+        <form method="post" action="Gamelogic"> 
+    	<input type="submit" value="Select">
+    	</form>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    	<form method="post" action="Gamelogic"> 
+    	<input type="submit" value="Select">
+    	</form>
+    </td>
+    <td>
+    	<form method="post" action="Gamelogic"> 
+    	<input type="submit" value="Select">
+    </form>
+    
+    </td>
+    <td>    
+    	<form method="post" action="Gamelogic"> 
+    	<input type="submit" value="Select">
+    </form>
+    </td>
+  </tr>
+</table>
+
 <!--  obtain opponents move -->
 <!-- Jsp If statement to add cross/circle/fill grid colour if move is valid (and update opponents move) -->
 </body>
