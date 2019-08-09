@@ -65,6 +65,7 @@ public class GameLogic {           //2d array for the board
 	}
 	//This updates the board from coordinates of servlet
 	public void updateBoard(String coordinate) {
+		Computer.computerMove(board);
 		int passedCoord = Integer.parseInt(coordinate);
 		
 		int xCoordiante = passedCoord % 10;
