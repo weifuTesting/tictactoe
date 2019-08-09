@@ -1,21 +1,33 @@
 package gameLogic;
 
-import java.util.Random;
-
 public class Computer {
 	static int rows = 3;
 	static int columns = 3;
-	private Random xCoord;
-	private Random yCoord;
-	GameLogic board = new GameLogic();
+	static boolean validMove = false;
 	
-	public void computerMove() {
-		/*for (int i = 0; i < columns; i++) {
-			if ((board[0][0] == xCoord && != 1){
-				board[0][0] == 2;
-			}	
-		}*/
-		//Attempt at move loop
+	public static void computerMove(int [][] board) {
+		int num1 = (int) (Math.random()*3);
+		int num2 = (int) (Math.random()*3);
+		
+		for (int i=0; i < rows; i++) {  //convert to string to send back to jsp
+			for(int j=0; j < columns; j++){
+				if(board[i][j] == 0) {
+					validMove = true;
+				}
+			}
+		}
+		System.out.println(validMove);
+		while(board [num1][num2] != 0 && validMove == true){
+			num1 = (int) (Math.random()*3);
+			num2 = (int) (Math.random()*3);
+		}
+		if(validMove == false)
+			System.out.println("nope");
+		else
+			System.out.println("test");
+			board[num1][num2] = 2;
+		
+					
 	}
 	
 	//array 0 = empty
