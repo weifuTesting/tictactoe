@@ -29,24 +29,30 @@ table,tr,td {
 <table>
   <tr>
     <td>
+
+    <form method="POST" action="GameServlet"> 
     <div id=0b>
-    <form method="GET" action="GameServlet"> 
+    <form method="POST" action="GameServlet"> 
+
     	<input type="hidden" name="coordinate" id="00" value="00" />  <!-- 00 refers to position0,0 -->
     	<input type="submit" value="Select">
     	</form> 
     </div>
     </td>
     <td>
+
     <div id=3b>
-    	<form method="GET" action="GameServlet"> 
+    	<form method="POST" action="GameServlet"> 
+
     	 <input type="hidden" name="coordinate" id="01" value="01" /> 
     	<input type="submit" value="Select">
     	</form>
     </div>
     </td>
     <td>
+      
     <div id=6b>
-        <form method="GET" action="GameServlet"> 
+        <form method="POST" action="GameServlet"> 
          <input type="hidden" name="coordinate" id="02" value="02" /> 
     	<input type="submit" value="Select">
     	</form>
@@ -55,24 +61,29 @@ table,tr,td {
   </tr>
   <tr>
     <td>
+
+
     <div id=1b>
-    	<form method="GET" action="GameServlet"> 
+    	<form method="POST" action="GameServlet">
+
     	 <input type="hidden" name="coordinate" id="10" value="10" /> 
     	<input type="submit" value="Select">
     </form>
     </div>
     </td>
     <td>
+
     <div id=4b>
-        <form method="GET" action="GameServlet"> 
+       <form method="POST" action="GameServlet"> 
          <input type="hidden" name="coordinate" id="11" value="11" /> 
     	<input type="submit" value="Select">
     	</form>
     </div>
     </td>
     <td>
+
     <div id=7b>
-        <form method="GET" action="GameServlet"> 
+        <form method="POST" action="GameServlet"> 
          <input type="hidden" name="coordinate" id="12" value="12" /> 
     	<input type="submit" value="Select">
     	</form>
@@ -81,25 +92,31 @@ table,tr,td {
   </tr>
   <tr>
     <td>
+
     <div id=2b>
-    	<form method="GET" action="GameServlet"> 
+    	<form method="POST" action="GameServlet"> 
+
     	 <input type="hidden" name="coordinate" id="20" value="20" /> 
     	<input type="submit" value="Select">
     	</form>
     </div>
     </td>
     <td>
+
     <div id=5b>
-    	<form method="GET" action="GameServlet"> 
+    	<form method="POST" action="GameServlet"> 
+
     	 <input type="hidden" name="coordinate" id="21" value="21" /> 
     	<input type="submit" value="Select">
     </form>
     </div>
     
     </td>
+
     <td> 
      <div id=8b>   
-    	<form method="GET" action="GameServlet"> 
+    	<form method="POST" action="GameServlet"> 
+
     	 <input type="hidden" name="coordinate" id="22" value="22" /> 
     	<input type="submit" value="Select">
     </form>

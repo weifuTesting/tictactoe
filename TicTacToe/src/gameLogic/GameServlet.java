@@ -28,6 +28,15 @@ public class GameServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		doPost(request, response);
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Boolean gameOn = true;
 		String coordinate = request.getParameter("coordinate"); //get input from jsp corrosponding to button pressed
 		//System.out.println(coordinate);
@@ -53,6 +62,7 @@ public class GameServlet extends HttpServlet {
 			req.forward(request, response);
 			return;
 		} // error occurs when getting a win and redirecting to win page.
+
 		
 		//response.sendRedirect("Game.jsp?boardState="+boardState);
 		//try this https://stackoverflow.com/questions/26352632/how-to-fix-cannot-call-sendredirect-after-the-response-has-been-committed
@@ -64,18 +74,7 @@ public class GameServlet extends HttpServlet {
 		//}
 		//https://docs.oracle.com/cd/A97329_03/web.902/a95882/basics.htm#1014110
 		//page search: Passing Data Between a JSP Page and a Servlet
-		//https://www.programmergate.com/pass-data-servlet-jsp/
-		
-		//"Main method"
-		//run logic on board
-		//returns output
-	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//doGet(request, response);
 	}
 
 }
