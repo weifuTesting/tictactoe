@@ -15,6 +15,7 @@ public class Computer {
 				board[0][0] == 2;
 			}	
 		}*/
+		//Attempt at move loop
 	}
 	
 	//array 0 = empty

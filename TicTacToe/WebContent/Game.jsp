@@ -109,7 +109,7 @@ table,tr,td {
     	</td>
 	</tr>
 </table>
-
+<!-- Format fix -->
 <script type="text/javascript" >
 
     	var coord = "<%=boardCoordinates%>";

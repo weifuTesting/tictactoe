@@ -52,7 +52,7 @@ public class GameServlet extends HttpServlet {
 		/*else{
 			response.sendRedirect("DrawScreen.jsp");
 			return;
-		}*/
+		}*/ //finish loop
 
 		//check if win CheckBoardCondition()
 		String boardState = board.sendUpdate();
