@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>You win</title>
+<title>Lose/title>
 </head>
 <body>
-<h1>You Win</h1>
+<h1>You lose</h1>
 
 </body>
 </html>
