@@ -14,13 +14,11 @@ public class GameLogic {           //2d array for the board
 		//System.out.println(CheckBoardCondition());
 		//System.out.println(sendUpdate());
 		//updateBoard("22");
+		//sendUpdate();
 		
-
-		
-
-	}
-	
-	public static int CheckBoardCondition(){
+		//change methods to static to test
+	}	
+	public int CheckBoardCondition(){
 		boolean playerWin = false;
 		boolean computerWin = false;
 		
@@ -66,25 +64,27 @@ public class GameLogic {           //2d array for the board
 			
 	}
 	//This updates the board from coordinates of servlet
-	public static void updateBoard(String coordinate) {
+	public void updateBoard(String coordinate) {
 		int passedCoord = Integer.parseInt(coordinate);
 		
 		int xCoordiante = passedCoord % 10;
 		int yCoordinate = passedCoord / 10 % 10;
 		
 		board[xCoordiante][yCoordinate] = 1;
+		
+		//Insert Computer move
 	}
 	
 	
-	//this converts the 2d array into a string to be sent back to the html page
-	public static String sendUpdate(){
+	//this converts the 2d array into a string to be sent back to the jsp/html page
+	public String sendUpdate(){
 		String servletString = "";
 		for (int i=0; i < rows; i++) {  //convert to string to send back to jsp
 			for(int j=0; j < collumns; j++){
 				servletString=servletString + board[i][j];
-							
 			}
 		}
+		//System.out.println(servletString);
 		return servletString;
 		
 	}
